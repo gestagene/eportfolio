@@ -15,3 +15,8 @@ const observer = new IntersectionObserver(
 );
 
 sections.forEach((section) => observer.observe(section));
+document.querySelectorAll(".mobile-menu a").forEach((link) => {
+  link.addEventListener("click", () => {
+    document.getElementById("menu-checker").checked = false;
+  });
+});

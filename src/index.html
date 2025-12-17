@@ -17,6 +17,19 @@
     ></script>
   </head>
   <body>
+    <input type="checkbox" id="menu-checker" class="peer hidden" />
+
+    <div
+      class="mobile-menu fixed inset-0 z-60 flex translate-x-full flex-col items-center justify-center space-y-8 bg-black/95 text-xl tracking-[0.2em] transition-transform duration-300 ease-in-out md:hidden peer-checked:translate-x-0"
+    >
+      <a href="#about" class="text-[#999999] hover:text-white">About</a>
+      <a href="#education" class="text-[#999999] hover:text-white">Education</a>
+      <a href="#skills" class="text-[#999999] hover:text-white">Skills</a>
+      <a href="#projects" class="text-[#999999] hover:text-white">Projects</a>
+      <a href="#certifications" class="text-[#999999] hover:text-white"
+        >Certifications</a
+      >
+    </div>
     <header
       class="sticky backdrop-blur-[2px] bg-black/40 top-0 z-50 flex justify-between tracking-widest"
     >
@@ -60,11 +73,20 @@
           Certifications
         </a>
       </nav>
-      <nav class="md:hidden flex flex-col space-y-1 my-5 mx-8 rotate-y-180">
-        <span class="bg-[#ffffff]/80 rounded-full w-10 h-1"></span>
-        <span class="bg-[#ffffff]/80 rounded-full w-8 h-1"></span>
-        <span class="bg-[#ffffff]/80 rounded-full w-6 h-1"></span>
-      </nav>
+      <label
+        for="menu-checker"
+        class="relative z-80 mx-8 my-5 flex h-6 w-10 cursor-pointer flex-col items-end justify-between md:hidden"
+      >
+        <span
+          class="h-1 w-10 origin-center rounded-full bg-white/80 transition-all duration-300 peer-checked:translate-y-2.5 peer-checked:rotate-45"
+        ></span>
+        <span
+          class="h-1 w-8 rounded-full bg-white/80 transition-all duration-300 peer-checked:opacity-0"
+        ></span>
+        <span
+          class="h-1 w-6 origin-center rounded-full bg-white/80 transition-all duration-300 peer-checked:w-10 peer-checked:-translate-y-2.5 peer-checked:-rotate-45"
+        ></span>
+      </label>
     </header>
     <main>
       <div class="relative hidden lg:flex z-50">
