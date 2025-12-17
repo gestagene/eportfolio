@@ -21,6 +21,10 @@ html {
   scroll-behavior: smooth !important;
 }
 
+section {
+  scroll-margin-top: 100px;
+}
+
 .animate {
   opacity: 0;
   translate: 0 100px;
