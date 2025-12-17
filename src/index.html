@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gene's Portfolio</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"
+      defer
+    ></script>
+  </head>
+  <body>
+    <header
+      class="sticky backdrop-blur-[2px] bg-black/40 top-0 z-50 flex justify-between tracking-widest"
+    >
+      <h1
+        class="whitespace-nowrap text-lg md:text-xl w-45 mt-4 my-2 ml-10 bg-linear-to-r from-[#004aad] to-[#cb6ce6] bg-clip-text text-transparent font-semibold hover:cursor-pointer"
+        onclick="location.href='#'"
+      >
+        &lt; Gene Gesta />
+      </h1>
+      <nav
+        class="hidden w-full md:flex justify-center md:space-x-6 lg:space-x-12 text-md md:text-lg p-5 text-[#999999]"
+      >
+        <a
+          href="#about"
+          class="hover:text-[#ffffff] hover:scale-105 transition duration-300"
+        >
+          About
+        </a>
+        <a
+          href="#education"
+          class="hover:text-[#ffffff] hover:scale-105 transition duration-300"
+        >
+          Education
+        </a>
+        <a
+          href="#skills"
+          class="hover:text-[#ffffff] hover:scale-105 transition duration-300"
+        >
+          Skills
+        </a>
+        <a
+          href="#projects"
+          class="hover:text-[#ffffff] hover:scale-105 transition duration-300"
+        >
+          Projects
+        </a>
+        <a
+          href="#certifications"
+          class="hover:text-[#ffffff] hover:scale-105 transition duration-300"
+        >
+          Certifications
+        </a>
+      </nav>
+      <nav class="md:hidden flex flex-col space-y-1 my-5 mx-8 rotate-y-180">
+        <span class="bg-[#ffffff]/80 rounded-full w-10 h-1"></span>
+        <span class="bg-[#ffffff]/80 rounded-full w-8 h-1"></span>
+        <span class="bg-[#ffffff]/80 rounded-full w-6 h-1"></span>
+      </nav>
+    </header>
+    <main>
+      <div class="relative hidden lg:flex z-50">
+        <div
+          class="hover:cursor-pointer fixed flex flex-col space-y-5 left-0 bottom-28 mx-8"
+        >
+          <a href="https://github.com/gestagene" target="_blank">
+            <i
+              class="fa-brands fa-github fa-1x transition duration-300 hover:-translate-y-1 hover:text-white hover:cursor-pointer"
+            ></i>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/gene-brian-gesta/"
+            target="_blank"
+          >
+            <i
+              class="fa-brands fa-linkedin-in fa-1x transition duration-300 hover:-translate-y-1 hover:text-white hover:cursor-pointer"
+            ></i>
+          </a>
+
+          <a href="https://x.com/_gene88" target="_blank">
+            <i
+              class="fa-brands fa-x-twitter fa-1x transition duration-300 hover:-translate-y-1 hover:text-white hover:cursor-pointer"
+            ></i>
+          </a>
+        </div>
+
+        <div
+          class="fixed -right-12.75 bottom-48 z-50 rotate-90 text-sm transition duration-300 hover:-translate-y-1 hover:text-white hover:cursor-pointer"
+        >
+          gestagenebrian@gmail.com
+        </div>
+        <div
+          class="fixed left-0 bottom-0 sm:h-24 w-0.5 bg-[#999999]/80 z-10 pointer-events-none mx-10"
+        ></div>
+        <div
+          class="fixed right-0 bottom-0 sm:h-24 w-0.5 bg-[#999999]/80 z-10 pointer-events-none mx-10"
+        ></div>
+      </div>
+      <section id="home" class="relative min-h-full overflow-hidden">
+        <img
+          src="./assets/Background.png"
+          class="pointer-events-none object-cover min-w-full min-h-screen -z-10 opacity-80"
+        />
+        <div
+          class="absolute inset-0 bg-linear-to-t from-[#050816] via-[#050816]/98 to-transparent"
+        ></div>
+
+        <div
+          id="hero"
+          class="animate absolute flex-col justify-self-center bottom-30 text-center p-2 tracking-widest pointer-events-none hover:scale-110 transition duration-500 z-20"
+        >
+          <h1 class="text-x sm:text-2xl font-bold p-1 text-[#2c409c]">
+            Hi, My Name is
+          </h1>
+          <h1 class="text-4xl sm:text-5xl font-bold p-1 text-white/80">
+            Gene Brian Gesta
+          </h1>
+          <p class="m-3">
+            I'm a college student pursuing Bachelor of Science in Information
+            Technology.
+          </p>
+          <p>
+            Currently, I'm focused on building my skills in front-end web
+            development.
+          </p>
+        </div>
+      </section>
+
+      <section
+        id="about"
+        class="animate relative min-h-full sm:mb-40 flex flex-col items-center tracking-widest"
+      >
+        <h1 class="text-xs sm:text-sm font-semibold mb-2">INTRODUCTION</h1>
+        <h1 class="text-xl sm:text-2xl font-semibold text-white/90">
+          About Me
+        </h1>
+        <div>
+          <img
+            src="./assets/profile.jpg"
+            class="rounded-full ring-purple-500/50 ring-2 shadow-[0_0_30px_0_rgba(168,85,247,0.7)] w-25 sm:w-50 mt-7"
+          />
+        </div>
+        <div class="text-center mt-10 mx-5">
+          <p class="mb-5">
+            Hello! My name is Gene and I'm an aspiring software engineer.
+          </p>
+          <p class="mb-5">
+            I'm passionate about technology, designing web applications, and
+            solving problems.
+          </p>
+          <p class="mb-5">
+            My main focus these days is building my skills mostly on front-end
+            web development.
+          </p>
+          <p class="mb-5">
+            Here are some of the technologies I've been working with recently:
+          </p>
+          <p class="mb-2 text-cyan-500">React</p>
+          <p class="mb-2 text-cyan-400">Tailwindcss</p>
+        </div>
+      </section>
+      <section
+        id="education"
+        class="animate relative sm:mb-40 tracking-widest min-h-full items-center"
+      >
+        <div class="text-center m-10">
+          <h1 class="font-semibold text-xs sm:text-sm mb-2">EDUCATION</h1>
+          <h1 class="font-semibold text-xl sm:text-2xl text-white/90">
+            My Academic Journey
+          </h1>
+        </div>
+
+        <div
+          class="relative grid grid-cols-2-[0.050fr_1fr] sm:grid-cols-[1fr_0.050fr_1fr] justify-center"
+        >
+          <div
+            class="metoo mb-20 top-40 sm:top-10 sm:relative bg-[#040612] border-l-4 sm:border-r-4 border-[#ffffff] rounded-lg col-start-2 sm:col-start-1 self-start sm:h-45 sm:w-125 sm:justify-self-end ml-5 sm:mr-5"
+          >
+            <div
+              class="relative top-18 sm:top-15 right-2 sm:left-122 h-3 w-3 bg-white rotate-45 -z-10"
+            ></div>
+            <div class="p-5 space-y-3">
+              <h1 class="text-white/80 font-bold text-2xl">
+                Colegio de Montalban (2024-Present)
+              </h1>
+              <h1>Bachelor of Science in Information and Technology</h1>
+            </div>
+          </div>
+          <div
+            class="relative sm:top-10 bottom-63 sm:col-start-2 space-y-50 sm:space-y-40 justify-self-center"
+          >
+            <div
+              class="absolute left-7 sm:right-7 justify-self-center h-115 w-1 bg-white -z-20"
+            ></div>
+            <img
+              src="https://scontent.fmnl4-4.fna.fbcdn.net/v/t39.30808-6/366165555_109528598905526_3016794916943036402_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeF71glEQ-j6Gv7LCorRBMCG1-EP3SdhPkLX4Q_dJ2E-QixlgmaTe0ljyxbn6mwKpvQDezWQArrYa6HHZfL9xHfr&_nc_ohc=ilu1nxgEo6cQ7kNvwFI8f49&_nc_oc=Adko5M8IC5DUE419OZ-H1kd-pr0pabVNbO3GmZCqCoz9ZQ4GBSbVFFARpnvCvA4iiGPoxDTgImlbSVvJlZNhDKNW&_nc_zt=23&_nc_ht=scontent.fmnl4-4.fna&_nc_gid=UAgSfdWE_Q6H-SNVSke_Cw&oh=00_AfnXk-8k-pNOTMOBUoVtiXaMjyJbBedi24P0blUKAyq8FA&oe=69437766"
+              class="rounded-full w-15 min-w-15 mt-10 border-2 border-white"
+            />
+            <img
+              src="https://scontent.fmnl4-3.fna.fbcdn.net/v/t39.30808-6/274868555_3113915528826702_123707796367847848_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHsdIzMZ-xOLMZEXJ7EodJeslyt3ZtUqNeyXK3dm1So12rl1g15ig5hLbONzoqNDwjQQkumzHQ185Qfl9ogdrUc&_nc_ohc=HFrFCbB3JVMQ7kNvwG4i2G4&_nc_oc=Adl_xp05HU-aTBmJKiFBN6-jMpnRjOmAr4aGUdn-SLKtD6UTjDLgKk-kOM_rvG4m6i-3GK1h2ZjuHKomddAMw11h&_nc_zt=23&_nc_ht=scontent.fmnl4-3.fna&_nc_gid=ScqEMaOM-FXiJXRnJIjv8Q&oh=00_Aflte-dMx8EJSKJEq6QOxFAnZod-_qiQFb3IWcVLiaywWA&oe=69434424"
+              class="rounded-full w-15 min-w-15 border-2 border-white"
+            />
+          </div>
+          <div
+            class="metoo top-30 sm:relative sm:top-65 bg-[#040612] border-l-4 border-[#ffffff] rounded-lg w-auto self-start sm:h-55 sm:w-125 col-start-2 sm:col-start-3 ml-5"
+          >
+            <div
+              class="relative top-15 right-2 h-3 w-3 bg-white rotate-45 -z-10"
+            ></div>
+            <div class="p-5 space-y-3">
+              <h1 class="text-white/80 font-bold text-2xl">
+                Kasiglahan Village Senior High School (2022-2024)
+              </h1>
+              <h1>TVL - Information Communication Technology</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="skills"
+        class="animate relative min-h-full tracking-widest overflow-x-hidden md:mt-70"
+      >
+        <div class="text-center">
+          <h1 class="text-xs sm:text-sm font-semibold mb-2">SKILLS</h1>
+          <h1 class="text-xl sm:text-2xl font-semibold text-white/90">
+            Current Skill Set
+          </h1>
+        </div>
+        <h1 class="text-center text-2xl font-semibold mt-6">
+          &lt; Programming >
+        </h1>
+        <div class="p-10 flex flex-wrap justify-center mt-0 gap-4">
+          <img
+            src="./assets/html.png"
+            class="object-cover p-3 bg-white h-20 w-20 border-2 border-white rounded-b-4xl rounded-t-4xl hover:scale-105 transition duration-75"
+          />
+          <img
+            src="./assets/css.png"
+            class="object-cover p-1 bg-white h-20 w-20 border-2 border-white rounded-b-4xl rounded-t-4xl hover:scale-105 transition duration-75"
+          />
+          <img
+            src="./assets/js.png"
+            class="object-cover p-2 bg-white h-20 w-20 rounded-b-4xl rounded-t-4xl hover:scale-105 transition duration-75"
+          />
+          <img
+            src="./assets/pythoned.png"
+            class="object-cover p-1 bg-white h-20 w-20 border-2 border-white rounded-b-4xl rounded-t-4xl hover:scale-105 transition duration-75"
+          />
+          <img
+            src="./assets/react.png"
+            class="object-contain p-3 bg-white h-20 w-20 border-2 border-white rounded-b-4xl rounded-t-4xl hover:scale-105 transition duration-75"
+          />
+          <img
+            src="./assets/tailwind.png"
+            class="object-contain p-3 bg-white h-20 w-20 border-2 border-white rounded-b-4xl rounded-t-4xl hover:scale-105 transition duration-75"
+          />
+        </div>
+      </section>
+      <section
+        id="projects"
+        class="animate relative min-h-full tracking-widest overflow-x-hidden mt-30 flex flex-col mx-4 items-center"
+      >
+        <div class="text-center">
+          <h1 class="text-xs sm:text-sm font-semibold mb-2">PROJECTS</h1>
+          <h1 class="text-xl sm:text-2xl font-semibold text-white/90">
+            Featured Works
+          </h1>
+        </div>
+        <div class="mt-10 flex flex-col items-center">
+          <div
+            class="flex flex-col sm:flex-row hover:bg-white/10 rounded-sm p-2 w-[70%] mx-5 sm:w-1/2 items-center sm:items-start group transition duration-400"
+          >
+            <img
+              src="./assets/washapp.jpg"
+              class="group-hover:border-2 border border-white/10 rounded-sm p-1 w-75 sm:w-50"
+            />
+            <div class="ml-5 mt-2">
+              <h1
+                class="font-bold text-white group-hover:text-blue-400 transition duration-300"
+              >
+                Washapp
+              </h1>
+
+              <p class="mt-1 text-sm">
+                (Ongoing) A web-based platform designed to simplify laundry
+                services by connecting users with nearby laundry shops.
+              </p>
+              <div
+                class="mt-3 text-xs space-x-10 bg-white/2 w-1/2 flex justify-evenly"
+              >
+                <span>React</span>
+                <span>Tailwind</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-col sm:flex-row hover:bg-white/10 rounded-sm p-2 w-[70%] mx-5 sm:w-1/2 items-center sm:items-start group transition duration-400"
+          >
+            <img
+              src="./assets/webapp.png"
+              class="group-hover:border-2 border border-white/10 rounded-sm p-1 w-75 sm:w-50"
+            />
+            <div class="ml-5 mt-2">
+              <a
+                href="https://weather-app-iota-ashen-66.vercel.app/"
+                target="_blank"
+                class="font-bold text-white hover:cursor-pointer group-hover:text-blue-400 transition duration-300"
+              >
+                Basic Weather App
+
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+
+              <p class="mt-1 text-sm">
+                Having struggled with understanding how API works, I made a
+                simple web application that uses a search feature to determine a
+                location's weather condition. Built with React.js and deployed
+                by Vercel.
+              </p>
+              <div
+                class="mt-3 text-xs space-x-10 bg-white/2 w-1/4 flex justify-evenly"
+              >
+                <span>React</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="certifications"
+        class="animate relative min-h-full tracking-widest my-40"
+      >
+        <div class="text-center my-5">
+          <h1 class="text-xs sm:text-sm font-semibold mb-2">CERTIFICATIONS</h1>
+          <h1 class="text-xl sm:text-2xl font-semibold text-white/90">
+            Continous Learning
+          </h1>
+        </div>
+        <div class="group flex justify-center gap-2 h-120 p-10 items-center">
+          <div
+            class="w-50 h-[80%] border border-slate-800 rounded-lg transition-all duration-500 ease-in-out hover:border-white/40 hover:w-75 hover:h-full group-hover:opacity-60 hover:opacity-100!"
+          ></div>
+
+          <div
+            class="w-50 h-full border border-slate-800 rounded-lg transition-all duration-500 ease-in-out hover:border-white/40 group-hover:h-[80%] hover:w-80 hover:h-full group-not-hover:w-75 group-not-hover:h-full group-hover:opacity-60 hover:opacity-100!"
+          ></div>
+
+          <div
+            class="w-50 h-[80%] border border-slate-800 rounded-lg transition-all duration-500 ease-in-out hover:border-white/40 hover:w-75 hover:h-full group-hover:opacity-60 hover:opacity-100!"
+          ></div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

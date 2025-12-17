@@ -1,0 +1,67 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+
+body {
+  color: #999999;
+  background-color: #050816;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: "Inter", "Helvetica", sans-serif;
+}
+
+.font-archivo {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+.animate {
+  opacity: 0;
+  translate: 0 100px;
+  transition: 2000ms ease;
+}
+
+.animate.show {
+  opacity: 1;
+  translate: 0;
+}
+
+#education img {
+  transition-delay: 1s;
+}
+
+#education.show img {
+  opacity: 1;
+  scale: 1;
+  animation: popIn 2.5s 1;
+}
+#education.show > div:not(:first-of-type) {
+  opacity: 1;
+  scale: 1;
+  animation: popIn 1s 1;
+}
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  25% {
+    opacity: 1;
+    transform: scale(2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
